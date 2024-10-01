@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nexara: Stylish Apparel and Accessories for Everyone</title>
+        <meta name="description" content="Shop the latest in men's, women's, and kids' fashion at Nexara. Discover trendy apparel, accessories, and seasonal sales.">
+        <meta name="keywords" content="fashion, apparel, men's wear, women's wear, kids' clothing, online shopping, nexara"> 
+        <link rel="shortcut icon" href="image1.jfif" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/433d2e0f02.js" crossorigin="anonymous"></script>
+    </head>    
+</head>
+<body>
+         <nav>
+            <div class="container">
+                <div class="logo"><h2 class="companyName">Nex<span>era</span></h2></div>
+                    <div class="navigationbar">
+                        <div class="searchbar">
+                            <form>
+                                <input type="search" id="searchbox" name="searchbox" class="searchbox" placeholder="search">
+                                <button type="button" id="searchButton" name="searchButton" class="searchButton"  title="Search" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <!-- NAvigation Links -->
+                        <div class="main-categories">
+                            <ul>
+                                <li><a href="#">Mens</a></li>
+                                <li><a href="#">Womens</a></li>
+                                <li><a href="#">Kids</a></li>
+                                <li><a href="#">Fashions</a></li>
+                                <li><a href="#">Parties</a></li>
+                                <li><a href="#">Sports</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- login and Signup  -->
+                <div class="registerUser">
+                    <form>
+                        <button type="button" name="loginButton" id="loginButton" class="loginButton" title="loginButton" aria-label="loginButton">
+                            <i class="fa-solid fa-user"></i>Login</button>
+                        <button type="button" name="signupButton" id="signupButton" class="signupButton" title="signupButton" aria-label="signupButton">
+                          <i class="fa-regular fa-address-book"></i>Sign Up</button>
+                    </form>
+                </div>
+                <div class="hideOnSmallScreen">
+                    <button type="button" name="hideOnSmallScreen_Button" class="hideOnSmallScreen_Button" id="hideOnSmallScreen_Button" title="hideOnSmallScreen_Button" aria-label="hideOnSmallScreen_Button">
+                        <i class="fa-solid fa-bars" title="navbar" aria-label="navbar"></i>
+                    </button>
+                </div>
+            </div>    
+        </nav>
+
+
+        <div class="navbar">
+            <div class="menu">
+                <div class="search_Box_On_Mobile">
+                    <div class="search_bar_On_Mobile">
+                        <div class="searchbar">
+                            <form>
+                                <input type="search" id="search_Box_On_Mobile" name="search_Box_On_Mobile" aria-label="search_Box_On_Mobile" class="searchbox_On_Mobile" placeholder="search">
+                                <button type="button" class="searchButton_On_Mobile" name="searchbox_On_Mobile" title="Search" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Navigation Links for small screen -->
+                <ul>
+                    <li><a href="#">Mens</a></li>
+                    <li><a href="#">Womens</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Fashions</a></li>
+                    <li><a href="#">Parties</a></li>
+                    <li><a href="#">Sports</a></li>
+                </ul>
+            </div>
+            <div class="registerUser_On_Mobile">
+                <form>
+                    <button type="button" name="loginButton_On_Mobile" id="loginButton_On_Mobile" aria-label="loginButton_On_Mobile" class="loginButton_On_Mobile">
+                        <i class="fa-solid fa-user"></i>Login</button>
+                    <button type="button" class="signupButton_On_Mobile" name="signupButton_On_Mobile" id="signupButton_On_Mobile" aria-label="signupButton_On_Mobile">
+                      <i class="fa-regular fa-address-book"></i>Sign Up</button>
+                </form>
+            </div>
+        </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let menuButton = document.querySelector(".hideOnSmallScreen button"); // Select the button containing fa-bars
+                let faBars = menuButton.querySelector(".fa-solid"); // Get the icon inside the button
+                let navbar = document.querySelector(".navbar");
+        
+                menuButton.addEventListener("click", () => {
+                    if (faBars.classList.contains("fa-bars")) {
+                        faBars.classList.remove("fa-bars");
+                        faBars.classList.add("fa-xmark"); // Change icon to xmark
+                        navbar.style.display = "block"; // Show the navbar
+                        menuButton.ariaExpanded = "true";
+                    } else {
+                        faBars.classList.remove("fa-xmark");
+                        faBars.classList.add("fa-bars"); // Change icon back to bars
+                        navbar.style.display = "none"; // Hide the navbar
+                        menuButton.ariaExpanded = "false";
+                    }
+                });
+            });
+        </script>
+
+
+    <!-- main -->
+     <main></main>
+
+
+
+
+
+
+
+   <!-- Image Row -->
+
+   <section class="our-policy">
+    <div class="first-policy">
+        <h4 class="product">Product</h4>
+    <span class="efficiency">With Warrenty</span>
+    </div>
+    <div class="second-policy">
+        <h4 class="product">7 Days</h4>
+    <span class="efficiency">Replacement</span>
+    </div>
+    <div class="third-policy">
+        <h4 class="product">Free</h4>
+    <span class="efficiency">Delivery</span>
+    </div>
+    <div class="fourth-policy">
+        <h4 class="product">Billing</h4>
+    <span class="efficiency">With GST</span>
+
+    </div>
+   </section>
+
+
+
+<!-- Image slider -->
+<section class="slider">
+    <div class="slides">
+        <img src="watchsalelive.png" alt="Image 1" class="slide">
+        <img src="image2.jpg" alt="Image 2" class="slide" loading="lazy">
+        <img src="image3.jpg" alt="Image 3" class="slide" loading="lazy">
+    </div>
+</section>
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        const slidesContainer = document.querySelector('.slides');
+        slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    // Change slide every 2 seconds
+    setInterval(nextSlide, 2000);
+</script>
+
+
+
+   <!-- Sesonal offers -->
+    <section class="sesonal-offers">
+        <div class="sesson-name">
+            <p class="sesson-name-logo">MONSOON <span>Sale</span></p>
+            <p class="view-all">View <span>All</span></p>
+        </section>
+
+        <section class="products-list">
+            <div class="products">
+                <p class="sesson-name">Moonsoon sale</p>
+                <img src="watch.avif" alt="product-image" class="product-image">
+                <div class="product-names">
+                    <p class="product-name">Watches</p>
+                </div>
+                <div class="product-summary">
+                        <p class="price">Rs.899</p>
+                <button class="product-order" name="product-order" id="product-order" aria-label="product-order">Order Now</button>
+                </div>
+            </div>
+
+            <div class="products">
+                <p class="sesson-name">Moonsoon sale</p>
+                <img src="shoes.avif" alt="product-image" class="product-image">
+                <div class="product-names">
+                    <p class="product-name">Shoes</p>
+                </div>
+                <div class="product-summary">
+                        <p class="price">Rs.499</p>
+                <button class="product-order" name="product-order"  aria-label="product-order">Order Now</button>
+                </div>
+            </div>
+
+
+            <div class="products">
+                <p class="sesson-name">Moonsoon sale</p>
+                <img src="topwear.avif" alt="product-image" class="product-image">
+                <div class="product-names">
+                    <p class="product-name">Topwear</p>
+                </div>
+                <div class="product-summary">
+                        <p class="price">Rs.399</p>
+                <button class="product-order">Order Now</button>
+                </div>
+            </div>
+
+
+            <div class="products">
+                <p class="sesson-name">Moonsoon sale</p>
+                <img src="sports.jpg" alt="product-image" class="product-image">
+                <div class="product-names">
+                    <p class="product-name">Sports wear</p>
+                </div>
+                <div class="product-summary">
+                        <p class="price">Rs.249</p>
+                <button class="product-order">Order Now</button>
+                </div>
+            </div>
+
+
+
+            <div class="products">
+                <p class="sesson-name">Moonsoon sale</p>
+                <img src="shirts.jfif" alt="product-image" class="product-image">
+                <div class="product-names">
+                    <p class="product-name">Shirts</p>
+                </div>
+                <div class="product-summary">
+                        <p class="price">Rs.299</p>
+                <button class="product-order">Order Now</button>
+                </div>
+            </div>
+
+
+    
+            <div class="products">
+                <p class="sesson-name">Moonsoon sale</p>
+                <img src="perfume.jpg" alt="product-image" class="product-image">
+                <div class="product-names">
+                    <p class="product-name">Perfume</p>
+                </div>
+                <div class="product-summary">
+                        <p class="price">Rs.499</p>
+                <button class="product-order">Order Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Shop by category -->
+
+    <section class="shop-by-cateogry">
+        <div class="category">
+            <p class="cateogries">Cateogry</p>
+            <p class="view-all-cateogry">View All</p>
+            </div>                
+        </section>
+
+
+
+
+        <section class="cateogry-name-and-images">
+           <div class="cateogry">
+            <img src="menswear.jfif" alt="Fruit" class="category-image">
+            <p class="cateogryName">Mens wear</p>
+           </div>
+
+           <div class="cateogry">
+            <img src="womenwear.jfif" alt="Fruit" class="category-image">
+            <p class="cateogryName">Womens wear</p>
+           </div>
+
+           <div class="cateogry">
+            <img src="kidswear.jfif" alt="Fruit" class="category-image">
+            <p class="cateogryName">Kids</p>
+           </div>
+
+           <div class="cateogry">
+            <img src="watches.jfif" alt="Fruit" class="category-image">
+            <p class="cateogryName">Watches</p>
+           </div>
+
+           <div class="cateogry">
+            <img src="topwear.avif" alt="Fruit" class="category-image">
+            <p class="cateogryName">Top wear</p>
+           </div>
+
+           <div class="cateogry">
+            <img src="shoes.avif" alt="Fruit" class="category-image">
+            <p class="cateogryName">Footwear</p>
+           </div>
+
+           <div class="cateogry">
+            <img src="household.jfif" alt="Fruit" class="category-image">
+            <p class="cateogryName">Household Essentials</p>
+           </div>
+        </section>
+
+
+<!-- Explore BestSeller -->
+ <section class="explore-bestSeller">
+    <p class="explore-seller">Explore BestSeller</p>
+ </section>
+
+ <section class="bestSellers">
+    <div class="best-seller">
+        <img src="menswear.jfif" alt="best-seller-image" class="best-seller-image">
+        <p class="best-seller-name">Mens</p>
+    </div>
+    <div class="best-seller">
+        <img src="womenwear.jfif" alt="best-seller-image" class="best-seller-image">
+        <p class="best-seller-name">Womens</p>
+    </div>
+    <div class="best-seller">
+        <img src="kids.avif" alt="best-seller-image" class="best-seller-image">
+        <p class="best-seller-name">Kids</p>
+    </div>
+    <div class="best-seller">
+        <img src="footwear.jfif" alt="best-seller-image" class="best-seller-image">
+        <p class="best-seller-name">Footwear</p>
+    </div>
+    <div class="best-seller">
+        <img src="parties.jpg" alt="best-seller-image" class="best-seller-image">
+        <p class="best-seller-name">Watch</p>
+    </div>
+    <div class="best-seller">
+        <img src="casual.jpg" alt="best-seller-image" class="best-seller-image">
+        <p class="best-seller-name">Watch</p>
+   </div>
+ </section>
+
+
+ <!-- LifeStyles -->
+
+ <section class="life-styles">
+     <p class="lifeStyle">Shop by lifeStyle</p>
+ </section>
+
+ <section class="shop-by-lifeStyle">
+    <div class="unique-lifeStyle">
+        <img src="sportsdress.png" alt="life-style-image" class="lifeStyle-image">
+        <p class="unique-lifestyle-name">Sports</p>
+    </div>
+    <div class="unique-lifeStyle">
+        <img src="partieswear.jpg" alt="life-style-image" class="lifeStyle-image">
+        <p class="unique-lifestyle-name">Parties</p>
+    </div>
+    <div class="unique-lifeStyle">
+        <img src="office.jfif" alt="life-style-image" class="lifeStyle-image">
+        <p class="unique-lifestyle-name">Works</p>
+    </div>
+    <div class="unique-lifeStyle">
+        <img src="casualwear.jfif" alt="lifestyle-image" class="lifeStyle-image">
+        <p class="unique-lifestyle-name">Casual</p>
+    </div>
+ </section>
+
+
+
+
+
+
+
+
+  <!-- What we Sells -->
+  <section class="what-we-sells">
+    <div class="selling-products">
+        <div class="topwear">
+            <h4 class="topwear-heading">Top Wear</h4>
+            <img src="image7.jfif" alt="topwear-image" class="topwear-image">
+            <button class="topwear-button">Starts Rs. 299</button>
+        </div>
+        <div class="bottom-wear">
+            <h4 class="bottom-wear-heading">Bottom Wear</h4>
+            <img src="image7.jfif" alt="bottom-wear-image" class="bottom-wear-image">
+            <button class="bottom-wear-button">Starts Rs. 299</button>
+        </div>
+        <div class="mens-wear">
+            <h4 class="mens-wear-heading">Mens Wear</h4>
+            <img src="image7.jfif" alt="mens-wear-image" class="mens-wear-image">
+            <button class="mens-wear-button">Starts Rs. 299</button>
+        </div>
+        <div class="womens-wear">
+            <h4 class="womens-wear-heading">Womens Wear</h4>
+            <img src="image7.jfif" alt="womens-wear-image" class="womens-wear-image">
+            <button class="womens-wear-button">Starts Rs. 299</button>
+        </div>
+        <div class="foot-wear">
+            <h4 class="foot-wear-heading">Foot Wear</h4>
+            <img src="image7.jfif" alt="foot-wear-image" class="foot-wear-image">
+            <button class="foot-wear-button">Starts Rs. 299</button>
+        </div>
+        <div class="party-wear">
+            <h4 class="party-wear-heading">Party Wear</h4>
+            <img src="image7.jfif" alt="party-wear-image" class="party-wear-image">
+            <button class="party-wear-button">Starts Rs. 299</button>
+        </div>
+        <div class="casual-wear">
+            <h4 class="casual-wear-heading">Casual Wear</h4>
+            <img src="image7.jfif" alt="casual-wear-image" class="casual-wear-image">
+            <button class="casual-wear-button">Starts Rs. 299</button>
+        </div>
+        <div class="formal-wear">
+            <h4 class="formal-wear-heading">Formal Wear</h4>
+            <img src="image7.jfif" alt="formal-wear-image" class="formal-wear-image">
+            <button class="formal-wear-button">Starts Rs. 299</button>
+        </div>
+        <div class="sports">
+            <h4 class="sports-heading">Sports</h4>
+            <img src="image7.jfif" alt="sports-images" class="sports-image">
+            <button class="sports-button">Starts Rs. 299</button>
+        </div>
+        <div class="watches">
+            <h4 class="watches-heading">Watches</h4>
+            <img src="image7.jfif" alt="watches-images" class="watches-image">
+            <button class="watches-button">Starts Rs. 299</button>
+        </div>
+        <div class="earbuds">
+            <h4 class="earbuds-heading">Earbuds</h4>
+            <img src="image7.jfif" alt="earbuds-images" class="earbuds-image">
+            <button class="earbuds-button">Starts Rs. 299</button>
+        </div>
+        <div class="snacks">
+            <h4 class="snacks-heading">Snacks</h4>
+            <img src="image7.jfif" alt="snacks-images" class="snacks-image">
+            <button class="snacks-button">Starts Rs. 299</button>
+        </div>
+        <div class="household-essentials">
+            <h4 class="household-essentials-heading">Household Essentials</h4>
+            <img src="image7.jfif" alt="household-essentials-image" class="household-essentials-image">
+            <button class="household-essentials-button">Starts Rs. 299</button>
+        </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+ <!-- Blogs -->
+  <section class="blogs">
+    <div class="nexara-blogs">Blogs</div>
+    <button class="view-all-blogs">View All</button>
+  </section>
+
+
+
+  <section class="ourBlogs">
+    <div class="our-blog">
+        <button class="top-blog">Top Blogs</button>
+        <button class="all-blogs">View All Blogs</button>
+    </div>
+  </section>
+
+
+    <section class="blog-by-month-date">
+        <div class="blog-by-date">
+            <img src="image6.jfif" alt="blog-image" class="blog-image"><br>
+            <h3 class="blog-heading">Gaming Earbuds for Travel: Compact and Portable Gaming Solutions</h3>
+            <br>
+            <p class="blog-description">When nothing can stop a gamer from entering the arena, we have got gaming earbuds so they...
+               </p><br>
+               <p class="blog-date">21 March 2024</p>
+               <p class="read-more">Read More</p>
+        </div>
+
+        <div class="blog-by-date">
+            <img src="image6.jfif" alt="blog-image" class="blog-image"><br>
+            <h3 class="blog-heading">Gaming Earbuds for Travel: Compact and Portable Gaming Solutions</h3>
+            <br>
+            <p class="blog-description">When nothing can stop a gamer from entering the arena, we have got gaming earbuds so they...
+               </p><br>
+               <p class="blog-date">21 March 2024</p>
+               <p class="read-more">Read More</p>
+        </div>
+
+    
+
+        
+    </section>
+
+
+
+   
+ 
+
+
+    <!-- Footer -->
+
+   <footer>
+   <section class="footer_Section">
+
+    <div class="company-logo">
+        <h2 class="company-logo-name">Nexara</h2>
+        <p class="company-slogan">Enter in New Era of Shopping</p>
+        <div class="subscribe">
+            <input type="email" name="email" id="emailid" class="emailid" placeholder="Enter Email id">
+            <button class="subscribe-button">Subscribe</button>
+        </div>
+        <div class="download-app-now">
+            <h4 class="download-our-app">Download Our App</h4>
+            <button class="app-from-play-store">Play Store</button>
+            <button class="app-from-app-store">App Store</button>
+        </div>
+    </div>
+
+    <div class="about-company">
+        <h2 class="about-nexara-detail">About Us</h2>
+        <p class="about-nexara">About Nexara</p>
+        <p class="news">News</p>
+        <p class="career">Career</p>
+        <p class="security">Security</p>
+        <p class="about-products">About Products</p>
+        <p class="what-we-do-next">What We Do Next ?</p>
+    </div>
+
+    <div class="contact-us">
+        <h2 class="contact-directly">Contact Us</h2>
+        <p class="number">+91-9999999999</p>
+        <p class="customer-care">Customer Care</p>
+        <p class="support">Support</p>
+        <p class="email">nexaralive@gmail.com</p>
+        <p class="live-support">Live Support</p>
+    </div>
+
+    <div class="help">
+        <h2 class="help-for-you">Help</h2>
+        <p class="track-your-order">Track Your Order</p>
+        <p class="return-policy">Return Policy</p>
+        <p class="warrenty-policy">Warrenty Policy</p>
+        <p class="why-we">Why Wwe ?</p>
+        <p class="faq">FA Q</p>
+    </div>
+
+    <div class="customer-feedback">
+        <h2 class="customer-feedback-heading">Customer Feedback</h2>
+        <p class="customer-feedback-para">"Great shopping experience!" - User</p>
+        <form>
+            <textarea name="feedback" class="customer-feedback" id="customerFeedback" cols="25" rows="8" placeholder="Customer Feedback"></textarea>
+        </form>
+    </div>
+    
+</section>
+
+   <!-- footer Bottom Row -->
+
+   <div class="footer-bottom-row">
+    <div class="social-accounts">
+        <h6 class="lets-meet-on-social">On Social Media</h6>
+    </div>
+    <div class="social">
+        <p class="instagram"><i class="fa-brands fa-instagram"></i></p>
+       <p class="facebook"><i class="fa-brands fa-facebook"></i></p>
+       <p class="twitter"><i class="fa-brands fa-x-twitter"></i></p>
+       <p class="linkedin"><i class="fa-brands fa-linkedin-in"></i></p>
+       </div>
+   </div>
+
+   <div class="copyright">
+    <p class="rights">&copy; All Right are Reserved.</p>
+   </div>
+
+</footer>
+
+    
+</body>
+
+</html>
